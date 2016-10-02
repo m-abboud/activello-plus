@@ -109,7 +109,11 @@
 		</div>
 
 		<div class="container main-content-area">
-
+			<?php if(get_theme_mod( 'activello_show_page_category_title', 1 ) && is_single() && has_category() ) : ?>
+			<div class="cat-title">
+				<?php echo get_the_category_list(); ?>
+			</div>
+			<?php endif; ?>
                         <?php
                             global $post;
                             if( is_singular() && get_post_meta($post->ID, 'site_layout', true) ){

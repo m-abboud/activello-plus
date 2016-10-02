@@ -89,6 +89,18 @@ function activello_customizer( $wp_customize ) {
 	) );
 
 
+    $wp_customize->add_setting( 'activello_show_page_category_title', array(
+        'default'           => 1,
+        'sanitize_callback' => 'activello_sanitize_checkbox',
+    ) );
+
+    $wp_customize->add_control( 'activello_show_page_category_title', array(
+        'label'     => esc_html__( 'Show single page category title?', 'activello' ),
+        'section'   => 'activello_content_section',
+        'priority'  => 30,
+        'type'      => 'checkbox'
+    ) );
+
 	// add "Featured Posts" section
 	$wp_customize->add_section( 'activello_featured_section' , array(
 		'title'      => esc_html__( 'Slider Option', 'activello' ),
