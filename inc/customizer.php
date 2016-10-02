@@ -207,11 +207,6 @@ function activello_customizer( $wp_customize ) {
                 'type' => 'textarea'
             ));
 
-				/* Support & Documentation */
-				$wp_customize->add_section('activello_important_links', array(
-						'priority' => 5,
-						'title' => __('Support and Documentation', 'activello')
-				));
 				    $wp_customize->add_setting('activello[imp_links]', array(
 				      	'sanitize_callback' => 'esc_url_raw'
 				    ));

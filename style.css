@@ -652,6 +652,39 @@ embed, iframe, object {
 .widget ul.nav.nav-tabs {
     padding: 0;
 }
+
+#footer-widgets {
+  padding: 50px 0px 50px 0px;
+  float: left;
+  overflow: visible;
+}
+#footer-widgets .widget {
+  padding: 0px 50px 0px 0px;
+  overflow: visible;
+  float: left;
+}
+#footer-widgets .widget > h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  margin-top: 0;
+  color: #636467;
+}
+#footer-widgets .widget-title {
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+#footer-widgets .widget-title:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 40px;
+  background: #a161bf;
+}
+
 #secondary .widget {
     margin-bottom: 50px;
     overflow: hidden;
@@ -858,10 +891,9 @@ ul.children, ul.children li {
 
 /* =Custom Styles
 ----------------------------------------------- */
-
 #logo {
-    padding: 50px 0 45px 0;
-    text-align: center;
+  padding: 15px 0 10px 0;
+  text-align: center;
 }
 #line {
     border-bottom: 1px solid #ddd;

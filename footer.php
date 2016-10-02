@@ -8,6 +8,9 @@
  */
 ?>
 				</div><!-- close .*-inner (main-content or sidebar, depending if sidebar is used) -->
+
+				<?php if (!is_404()) get_sidebar('footer'); ?>
+
 			</div><!-- close .row -->
 		</div><!-- close .container -->
 	</div><!-- close .site-content -->
@@ -19,7 +22,6 @@
 					<?php if( !get_theme_mod('footer_social') ) activello_social_icons(); ?>
 					<div class="copyright col-md-12">
 						<?php echo esc_html( get_theme_mod( 'activello_footer_copyright', 'Activello' ) ); ?>
-						<?php activello_footer_info(); ?>
 					</div>
 				</div>
 			</div><!-- .site-info -->
